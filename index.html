@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrollShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">🎭</span>
+            <span class="brand-name"><span class="color-troll">Troll</span>Shop</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="runaway-container">
+                <button id="signin-btn" class="btn-fancy">Sign In</button>
+            </div>
+            <button id="cart-btn" class="btn-fancy">Order Online (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-subtitle">
+                <span class="leaf-icon">✨</span> 100% Certified Nonsense
+            </div>
+            <h1 class="hero-title">Artisan Illusions<br><span class="highlight">Crafted to Confuse</span></h1>
+            <p class="hero-desc">
+                Step into the void of the impossible. From dehydrated water to invisible ink, our premium collection of absurdities is guaranteed to make you question reality. 
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-fancy">Made by Taha Ghassan</button>
+                <button class="btn-fancy">Enjoy the shop</button>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="img/entry.avif" alt="TrollShop Surreal Hero" class="hero-image">
+        </div>
+    </header>
+
+    <section id="products" class="products-section">
+        <div id="card-grid" class="card-grid"></div>
+    </section>
+
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="footer-title">About TrollShop</h3>
+                <div class="footer-line"></div>
+                <p class="footer-desc">here is our acoount on social media</p>
+                <div class="social-icons">
+                    <button id="troll-fb" class="social-circle fb-color"><i class="fa-brands fa-facebook"></i></button>
+                    <button id="troll-ig" class="social-circle ig-color"><i class="fa-brands fa-instagram"></i></button>
+                    <button id="troll-tg" class="social-circle tg-color"><i class="fa-brands fa-telegram"></i></button>
+                    <a href="https://youtu.be/cPKPDpYqIwE?si=yCnpfNUg0bYGdlUk" target="_blank" class="social-circle yt-color"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="footer-line"></div>
+                <ul class="contact-list">
+                    <li><span class="contact-icon wa-color"><i class="fa-solid fa-phone"></i></span> +964 776 607 3797</li>
+                    <li><span class="contact-icon ig-color"><i class="fa-brands fa-instagram"></i></span> <a href="https://www.instagram.com/4.tap?igsh=MTFrNng0bzZxZzZvcA==" target="_blank">@4.tap</a></li>
+                    <li><span class="contact-icon tg-color"><i class="fa-brands fa-telegram"></i></span> <a href="https://t.me/TAP_001" target="_blank">@tap_001</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>i hope you enjoyed my website</p>
+        </div>
+    </footer>
+
+    <div id="joke-modal" class="joke-modal">
+        <div class="joke-content">
+            <span class="close-joke">&times;</span>
+            <h2>April Fool! 🤡</h2>
+            <img src="img/aprilfool.webp" alt="Funny dog with glasses">
+            <p>We don't actually do Facebook here.</p>
+        </div>
+    </div>
+
+    <div id="blackout-screen" class="blackout-screen">
+        <h1>what have you done :(</h1>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
